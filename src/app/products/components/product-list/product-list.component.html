@@ -1,0 +1,9 @@
+<header>
+    <div class="example-button-container">
+        <button mat-raised-button [routerLink]="['/cart']" color="accent">Cart</button>
+    </div>
+</header>
+<div class="items">
+    <app-product *ngFor="let product of products" [product]="product">{{product}}</app-product>
+</div>
+<router-outlet></router-outlet>

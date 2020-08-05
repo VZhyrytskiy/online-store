@@ -1,0 +1,40 @@
+.items {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    padding: 30px;
+}
+
+.cart-item {
+    padding: 10px;
+    height: 284px;
+}
+
+.content {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.img {
+    height: 140px;
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.example-button-row {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.mat-display-1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mat-display-2 {
+    text-align: center;
+    margin: 30px;
+}

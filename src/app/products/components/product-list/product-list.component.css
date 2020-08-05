@@ -1,0 +1,16 @@
+.items {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.example-button-container {
+    margin-top: 10px;
+    margin-right: 10px;
+}

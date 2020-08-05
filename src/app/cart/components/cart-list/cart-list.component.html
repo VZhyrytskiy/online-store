@@ -1,0 +1,30 @@
+<div *ngIf="items.length > 0; else cartIsEmpty">
+    <h1 class="mat-display-1"> Your items: </h1>
+    <div class="items">
+        <div class="cart-item" *ngFor="let item of items">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{item.product.name}}</mat-card-title>
+                    <mat-card-subtitle>Price: {{item.product.price | currency}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="item.product.picture" class="img" alt="item.product.name">
+                <mat-card-content class="content">
+                    <p>Size: {{Size[item.size]}}</p>
+                    <p>Color: {{item.color}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="example-button-row">
+                        <button mat-raised-button color="primary" (click)="removeFromCart(item)" class="button"
+                            mat-button>Remove</button>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <div class="mat-display-2">
+        <h1>Your total: {{total | currency}}</h1>
+    </div>
+</div>
+<ng-template #cartIsEmpty>
+    <h1 class="mat-display-1"> You haven't bought anything yet. </h1>
+</ng-template>
