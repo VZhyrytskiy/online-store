@@ -11,9 +11,8 @@ import { ProductModel } from '../../../shared/models';
 export class ProductListComponent implements OnInit {
   products: ProductModel[];
 
-  getProducts(): void {
-    this.products = this.service.getProducts();
-  }
+
+
 
   constructor(private service: ProductsService) {
 
@@ -23,4 +22,9 @@ export class ProductListComponent implements OnInit {
     this.getProducts();
   }
 
+  // этот метод не используется в шаблоне, а значит его не надо делать публичным
+  // мтеоды располагаются обычно после конструктора
+  private getProducts(): void {
+    this.products = this.service.getProducts();
+  }
 }

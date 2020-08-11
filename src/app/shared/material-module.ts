@@ -43,6 +43,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 
+// не думаю, что нужно было подключать всего так много для выполнения такого небольшого задания.
+// ну раз хотелось, то ок.
 @NgModule({
   exports: [
     A11yModule,
